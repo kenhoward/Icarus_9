@@ -14,8 +14,8 @@ class App extends Component {
         <div className='container'>
           <section className='add-item'>
               <form>
-                <input type="text" name="username" placeholder="What's your name?" />
-                <input type="text" name="currentItem" placeholder="What are you bringing?" />
+                <input type="text" name="username" placeholder="Name..." />
+                <input type="text" name="currentItem" placeholder="Item..." />
                 <button>Add Item</button>
               </form>
           </section>
