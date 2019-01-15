@@ -54,6 +54,19 @@ class App extends Component {
     })
   }
 
+  loadItems() {
+    return this.state.items.map((item) => {
+      return (
+        <ul>
+          <li key={item.id}>
+            <h3>{item.title}</h3>
+            <p>item: {item.users}</p>
+          </li>
+        </ul>
+      )
+    })
+  }
+
   render() {
     return (
       <div className='app'>
@@ -73,14 +86,7 @@ class App extends Component {
           </section>
           <section className='display-item'>
             <div className='wrapper'>
-              <ul>
-                {this.state.items.map((item) => {
-                  <li key={item.id}>
-                  <h3>{item.title}</h3>
-                  <p>item: {item.users}</p>
-                </li>
-                })}
-              </ul>
+              {this.loadItems()}
             </div>
           </section>
         </div>
