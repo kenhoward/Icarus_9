@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project won't run without proper config file - be sure to grab that from google.firebase.com
+
 ## Available Scripts
 
 In the project directory, you can run:
