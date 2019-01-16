@@ -60,6 +60,7 @@ class App extends Component {
   }
 
   loadItems() {
+    // add confirm button for `removeItem`
     return this.state.items.map((item) => {
       return (
         <ul>
