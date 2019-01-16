@@ -65,8 +65,8 @@ class App extends Component {
       return (
         <ul>
           <li key={item.id}>
-            <h3>{item.title}</h3>
-            <p>item: {item.user}</p>
+            <h3>{item.user}</h3>
+            <p>item: {item.title}</p>
             <button onClick={() => this.removeItem(item.id)}>Remove Item</button>
           </li>
         </ul>
