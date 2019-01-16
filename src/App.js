@@ -54,6 +54,11 @@ class App extends Component {
     })
   }
 
+  removeItems(itemId) {
+    const itemRef = firebase.database().ref(`/items/${itemId}`);
+    itemRef.remove();
+  }
+
   loadItems() {
     return this.state.items.map((item) => {
       return (
